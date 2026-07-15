@@ -1,0 +1,2166 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-05 17:34+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: blog/views.py:106 blog/views.py:109 blog/views.py:137
+#: templates/main/base-logged-in.html:14 templates/main/partial/footer.html:9
+msgid "Blog"
+msgstr "Блог"
+
+#: blog/views.py:106
+msgid "Tolma.ch news and tips & tricks"
+msgstr "Tolma.ch - новости и полезные советы"
+
+#: blog/views.py:127
+msgid "Blog post does not exist"
+msgstr "Публикация не обнаружена"
+
+#: chat/views.py:17 chat/views.py:34
+msgid "Project not set"
+msgstr "Номер проекта не указан"
+
+#: chat/views.py:21 chat/views.py:38 translations/decorators.py:49
+#: translations/views_ajax.py:156 translations/views_ajax.py:175
+#: translations/views_ajax.py:180 translations/views_ajax.py:272
+#: translations/views_ajax.py:884
+msgid "Project not found"
+msgstr "Проект не найден"
+
+#: chat/views.py:23 chat/views.py:40 tolmach/decorators.py:22
+#: translations/decorators.py:51
+msgid "Access denied"
+msgstr "Нет доступа"
+
+#: chat/views.py:28 chat/views.py:45
+msgid "Chat not found"
+msgstr "Обсуждение не найдено"
+
+#: chat/views.py:48
+msgid "Text is empty"
+msgstr "Текст не указан"
+
+#: dicts/views.py:157
+msgid "Project glossaries"
+msgstr "Глоссарии проекта"
+
+#: entries/views.py:8
+msgid "Russian"
+msgstr "русский"
+
+#: entries/views.py:10
+msgid "English"
+msgstr "английский"
+
+#: entries/views.py:11
+msgid "English (Great Britain)"
+msgstr "английский (Великобритания)"
+
+#: entries/views.py:13
+msgid "Spanish"
+msgstr "испанский"
+
+#: entries/views.py:14
+msgid "Spanish (Mexico)"
+msgstr "испанский (Мексика)"
+
+#: entries/views.py:15
+msgid "Spanish (Chile)"
+msgstr "испанский (Чили)"
+
+#: entries/views.py:17
+msgid "German"
+msgstr "немецкий"
+
+#: entries/views.py:18
+msgid "German (Austria)"
+msgstr "немецкий (Австрия)"
+
+#: entries/views.py:19
+msgid "German (Switzerland)"
+msgstr "немецкий (Швейцария)"
+
+#: entries/views.py:21
+msgid "French"
+msgstr "французский"
+
+#: entries/views.py:22
+msgid "French (Canada)"
+msgstr "французский (Канада)"
+
+#: entries/views.py:23
+msgid "French (Belgium)"
+msgstr "французский (Бельгия)"
+
+#: entries/views.py:24
+msgid "French (Switzerland)"
+msgstr "французский (Швейцария)"
+
+#: entries/views.py:26
+msgid "Italian"
+msgstr "итальянский"
+
+#: entries/views.py:27
+msgid "Italian (Switzerland)"
+msgstr "итальянский (Швейцария)"
+
+#: entries/views.py:29
+msgid "Turkish"
+msgstr "турецкий"
+
+#: entries/views.py:30
+msgid "Turkish (Cyprus)"
+msgstr "турецкий (Кипр)"
+
+#: entries/views.py:32
+msgid "Korean"
+msgstr "корейский"
+
+#: entries/views.py:34
+msgid "Japanese"
+msgstr "японский"
+
+#: entries/views.py:36
+msgid "Chinese (simplified, China)"
+msgstr "китайский (упрощённый, Китай)"
+
+#: entries/views.py:37
+msgid "Chinese (simplified, Singapore)"
+msgstr "китайский (упрощённый, Сингапур)"
+
+#: entries/views.py:38
+msgid "Chinese (traditional, Taiwan)"
+msgstr "китайский (традиционный, Тайвань)"
+
+#: entries/views.py:39
+msgid "Chinese (traditional, Hong Hong SAR China)"
+msgstr "китайский (традиционный, Гонконг [САР])"
+
+#: entries/views.py:40
+msgid "Chinese (traditional, Macao SAR China"
+msgstr "китайский (традиционный, Макао [САР])"
+
+#: templates/email/emailtemplatesbodies.json:5
+msgid "Welcome to Tolma.ch!"
+msgstr "Добро пожаловать в Толма.ч!"
+
+#: templates/email/emailtemplatesbodies.json:7
+msgid "Start Translating in Minutes"
+msgstr "Начните переводить прямо сейчас"
+
+#: templates/email/emailtemplatesbodies.json:8
+#: templates/email/emailtemplatesbodies.json:17
+#: templates/email/emailtemplatesbodies.json:26
+msgid "Hello, <b><username></b>!"
+msgstr "Привет, <b><username></b>!"
+
+#: templates/email/emailtemplatesbodies.json:9
+msgid ""
+"Thank you for signing up with <span>Tolma‌</span>‌.‌<span>‌ch</span>! We’re "
+"excited to have you on-board."
+msgstr "Рады видеть тебя среди пользователей <span>Tolma‌</span>‌.‌<span>‌ch</span>!"
+
+#: templates/email/emailtemplatesbodies.json:14
+#: templates/email/emailtemplatesbodies.json:16
+msgid "Password reset approval"
+msgstr "Подтверждение сброса пароля"
+
+#: templates/email/emailtemplatesbodies.json:18
+msgid ""
+"You have asked for a new password. Here is the URL to reset the password:"
+"<br><br> https://tolma.ch/password-reset/<reset_token>/ <br><br>If you have "
+"not asked for new password, just ignore this messsage."
+msgstr ""
+"Вы запросили новый пароль. Перейдите по ссылке, чтобы сбросить пароль:"
+"<br><br> https://tolma.ch/password-reset/<reset_token>/ <br><br>Если вы "
+"не запрашивали новый пароль, можете игнорировать сообщение."
+
+#: templates/email/emailtemplatesbodies.json:23
+#: templates/email/emailtemplatesbodies.json:25
+msgid "Email approval"
+msgstr "Подтверждение почтового ящика"
+
+#: templates/email/emailtemplatesbodies.json:27
+msgid ""
+"You have updated your email address. Here is the URL to approve it:<br><br> "
+"https://tolma.ch/confirm-email/<approve_token>/ <br><br>If you have not "
+"updated your email, just ignore this messsage."
+msgstr ""
+"Вы обновили свой почтовый адрес. Перейдите под ссылке, чтобы подтвердить "
+"новый адрес:<br><br>https://tolma.ch/confirm-email/<approve_token>/ <br><br>"
+
+#: templates/main/base-logged-in.html:5
+msgid "Dashboard"
+msgstr "Табло"
+
+#: templates/main/base-logged-in.html:6 templates/tolmach/organization.html:7
+#: templates/tolmach/profile.html:7 templates/tolmach/view_user.html:7
+msgid "Projects"
+msgstr "Проекты"
+
+#: templates/main/base-logged-in.html:7 translations/decorators.py:66
+#: translations/views.py:37 translations/views.py:38 translations/views.py:385
+msgid "My projects"
+msgstr "Мои проекты"
+
+#: templates/main/base-logged-in.html:8
+msgid "Third party"
+msgstr "Сторонние проекты"
+
+#: templates/main/base-logged-in.html:9
+msgid "Community"
+msgstr "Сообщество"
+
+#: templates/main/base-logged-in.html:10 translations/decorators.py:72
+#: translations/views.py:47 translations/views.py:48 translations/views.py:391
+msgid "Public projects"
+msgstr "Публичные проекты"
+
+#: templates/main/base-logged-in.html:11
+msgid "People"
+msgstr "Люди"
+
+#: templates/main/base-logged-in.html:12
+#: templates/translations/project.html:331
+#: templates/translations/project.html:359
+msgid "TM Databases"
+msgstr "Памяти перевода (TM)"
+
+#: templates/main/base-logged-in.html:13
+msgid "Support"
+msgstr "Поддержка"
+
+#: templates/main/base-logged-in.html:15
+#: templates/main/partial/navbar-loggedin.html:6
+#: templates/tolmach/organization.html:9 tolmach/views.py:123
+#: tolmach/views.py:126 tolmach/views.py:128
+msgid "Settings"
+msgstr "Настройки"
+
+#: templates/main/base-logged-in.html:16
+msgid "Home"
+msgstr "Домой"
+
+#: templates/main/base-logged-in.html:17
+msgid "Search"
+msgstr "Найти"
+
+#: templates/main/base.html:138 templates/main/base.html:244
+msgid "Close"
+msgstr "Закрыть"
+
+#: templates/main/base.html:141 templates/main/base.html:247
+#: templates/translations/partial/add_text_modal.html:145
+#: templates/translations/partial/select_text_ranges_modal.html:37
+msgid "Next"
+msgstr "Далее"
+
+#: templates/main/base.html:273
+msgid "No results"
+msgstr "Нет результатов"
+
+#: templates/main/partial/footer.html:4
+msgid "We're in vk.com"
+msgstr "Мы ВКонтакте"
+
+#: templates/main/partial/footer.html:5
+msgid "Tolma.ch on Google+"
+msgstr "Tolma.ch в Google+"
+
+#: templates/main/partial/footer.html:6
+msgid "Our Twitter"
+msgstr "Наш Twitter"
+
+#: templates/main/partial/footer.html:7
+msgid "Telegram live chat"
+msgstr "Живой Telegram-чат"
+
+#: templates/main/partial/footer.html:8
+msgid "Tolma.ch on Facebook"
+msgstr "Tolma.ch на Facebook"
+
+#: templates/main/partial/footer.html:11
+msgid "Privacy policy"
+msgstr "Политика приватности"
+
+#: templates/main/partial/navbar-loggedin.html:2
+msgid "new messages"
+msgstr "новых сообщений"
+
+#: templates/main/partial/navbar-loggedin.html:3
+msgid "invited you to the project"
+msgstr "пригласил вас в проект"
+
+#: templates/main/partial/navbar-loggedin.html:4
+msgid "pitched you out of the project"
+msgstr "прогнал вас из проекта"
+
+#: templates/main/partial/navbar-loggedin.html:5
+msgid "Logout"
+msgstr "Выход"
+
+#: templates/main/partial/navbar-loggedin.html:7
+msgid "See all messages"
+msgstr "Все сообщения"
+
+#: templates/main/partial/navbar-loggedin.html:8
+msgid "Language"
+msgstr "Язык интерфейса"
+
+#: templates/main/partial/navbar-loggedin.html:72
+msgid "Dictionary"
+msgstr "Словарь"
+
+#: templates/main/partial/navbar-loggedin.html:116
+msgid "Fullscreen"
+msgstr "Полный экран"
+
+#: templates/main/partial/navbar-loggedin.html:128
+msgid "Help"
+msgstr "Помощь"
+
+#: templates/main/partial/navbar-loggedin.html:140
+msgid "Admin panel"
+msgstr "Панель администратора"
+
+#: templates/main/partial/navbar-loggedin.html:152
+msgid "Chat"
+msgstr "Обсуждение"
+
+#: templates/main/partial/navbar-loggedin.html:181
+msgid "Hi,"
+msgstr "Привет,"
+
+#: templates/main/partial/navbar-loggedin.html:199
+#: templates/tolmach/partial/all_messages_modal.html:8
+msgid "Notifications"
+msgstr "Уведомления"
+
+#: templates/main/partial/navbar.html:215
+msgid "Export translation"
+msgstr "Выгрузить перевод"
+
+#: templates/main/partial/navbar.html:236
+msgid "Fragments approved:"
+msgstr "Фрагментов подтверждено:"
+
+#: templates/main/partial/navbar.html:237
+msgid "Fragments translated:"
+msgstr "Фрагментов переведено:"
+
+#: templates/main/partial/navbar.html:255
+msgid "Please, set your email"
+msgstr "Пожалуйста, укажите ваш почтовый адрес"
+
+#: templates/main/partial/navbar.html:260
+msgid "Update"
+msgstr "Обновить"
+
+#: templates/main/partial/navbar.html:263
+msgid "Cancel"
+msgstr "Отмена"
+
+#: templates/main/partial/navbar.html:266
+msgid "What's going on?"
+msgstr "Что происходит?"
+
+#: templates/main/partial/navbar.html:270
+msgid "Please, confirm this is your valid email:"
+msgstr "Пожалуйста, подтвердите, что это ваш актуальный почтовый адрес"
+
+#: templates/main/partial/navbar.html:273
+msgid "Resend email"
+msgstr "Выслать ещё раз"
+
+#: templates/main/partial/navbar.html:276
+msgid "Change email"
+msgstr "Изменить адрес"
+
+#: templates/tolmach/email_confirm_error.html:10
+msgid "Email Confirmation Error"
+msgstr "Ошибка подтверждения электронной почты"
+
+#: templates/tolmach/email_confirm_error.html:15 translations/utils.py:147
+msgid "Something went wrong"
+msgstr "Что-то пошло не так"
+
+#: templates/tolmach/email_confirm_error.html:20
+msgid "Possible reasons:"
+msgstr "Возможные причины:"
+
+#: templates/tolmach/email_confirm_error.html:23
+msgid "The confirmation link has expired"
+msgstr "Срок действия подтверждающей ссылки истек"
+
+#: templates/tolmach/email_confirm_error.html:24
+msgid "The confirmation link was already used"
+msgstr "Подтверждающая ссылка уже была использована"
+
+#: templates/tolmach/email_confirm_error.html:25
+msgid "The confirmation link is invalid"
+msgstr "Подтверждающая ссылка недействительна"
+
+#: templates/tolmach/email_confirm_error.html:29
+#: templates/tolmach/email_confirm_expired.html:27
+#: templates/tolmach/email_confirm_success.html:26
+msgid "Go to Homepage"
+msgstr "Перейти на главную"
+
+#: templates/tolmach/email_confirm_error.html:32
+#: templates/tolmach/email_confirm_success.html:29
+msgid "Go to Settings"
+msgstr "Перейти в настроки"
+
+#: templates/tolmach/email_confirm_expired.html:10
+msgid "Confirmation Link Expired"
+msgstr "Срок действия подтверждающей ссылки истек"
+
+#: templates/tolmach/email_confirm_expired.html:15
+msgid "Confirmation Link Has Expired"
+msgstr "Срок действия подтверждающей ссылки истек"
+
+#: templates/tolmach/email_confirm_expired.html:20
+msgid ""
+"Email confirmation links are valid for 24 hours. You need to request a new "
+"confirmation email."
+msgstr ""
+"Ссылки для подтверждения почтового адреса действительны только в течение 24 "
+"часов. Вам необходимо запросить новую ссылку."
+
+#: templates/tolmach/email_confirm_expired.html:24
+#: templates/tolmach/email_confirm_expired.html:66
+#: templates/tolmach/email_confirm_expired.html:73
+msgid "Resend Confirmation Email"
+msgstr "Выслать новую ссылку"
+
+#: templates/tolmach/email_confirm_expired.html:45
+msgid "Sending..."
+msgstr "Отправка..."
+
+#: templates/tolmach/email_confirm_expired.html:70
+msgid "Error sending confirmation email"
+msgstr "Ошибка при отправке электронного письма с подтверждением"
+
+#: templates/tolmach/email_confirm_success.html:10
+msgid "Email Confirmed Successfully"
+msgstr "Почтовый ящик успешно подтверждён"
+
+#: templates/tolmach/email_confirm_success.html:15
+msgid "Congratulations!"
+msgstr "Поздравляем!"
+
+#: templates/tolmach/email_confirm_success.html:17
+#, python-format
+msgid ""
+"\n"
+"                            Your email address <strong>%(email)s</strong> "
+"has been successfully confirmed.\n"
+"                            "
+msgstr ""
+"\n"
+"Ваш адрес электронной почты <strong>%(email)s</strong> был успешно "
+"подтвержден.\n"
+"                            "
+
+#: templates/tolmach/email_confirm_success.html:22
+msgid ""
+"You can now use all features of Tolma.ch that require email verification."
+msgstr ""
+"Теперь вы можете использовать все функции Tolma.ch, для которых требуется "
+"подтверждение электронной почты."
+
+#: templates/tolmach/landing.html:5
+msgid "Translating together!"
+msgstr "Переводим вместе!"
+
+#: templates/tolmach/landing.html:6
+msgid "Login via social networks"
+msgstr "Войти через социальные сети"
+
+#: templates/tolmach/landing.html:7
+msgid "What is «Tolmach»?"
+msgstr "Что такое «Толмач»?"
+
+#: templates/tolmach/landing.html:8
+msgid ""
+"«Tolmach» is an integrated translating environment, service that combines "
+"all necessary tools for the translator in one place — glossaries, "
+"translation memory databases, dictionaries, machine translation engines and "
+"more. All the paperwork also will be done by «Tolmach». All you have to do "
+"is to load the document into the system. All the extraction of useful text "
+"and division up into easy to translate fragments will be produced "
+"automatically."
+msgstr ""
+"«Толмач» - это интергированная среда перевода, сервис, объединяющий в себе "
+"все необходимые переводчику инструменты в одном месте — глоссарии, базы "
+"памяти перевода, словари, машинные переводы и многое другое. Работу с "
+"документами «Толмач» тоже возьмёт на себя. Всё, что от вас потребуется — это "
+"загрузить документ в систему, а извлечение полезного текста и разделение его "
+"на удобные для перевода фрагменты будет произведено автоматически."
+
+#: templates/tolmach/landing.html:9
+msgid "A problem shared is a problem halved"
+msgstr "Одна голова – хорошо, а много – лучше"
+
+#: templates/tolmach/landing.html:113 templates/tolmach/landing.html:301
+#: templates/tolmach/partial/register_modal.html:9
+msgid "Sign up and login"
+msgstr "Регистрация и вход"
+
+#: templates/tolmach/landing.html:134
+msgid ""
+"Invite old colleagues or find new ones to work on Your project not looking "
+"up from translation."
+msgstr ""
+"Приглашайте к работе над Вашим проектом своих старых коллег или ищите новых, "
+"не отрываясь от перевода."
+
+#: templates/tolmach/landing.html:138
+msgid "All the paperwork is up to us."
+msgstr "Работу с документами берём на себя"
+
+#: templates/tolmach/landing.html:139
+msgid ""
+"«Tolmach» will parse received documents, extract all the useful textual data "
+"and split it into easy to translate fragments."
+msgstr ""
+"Разбираем полученные документы, извлекаем все полезные текстовые данные и "
+"разбиваем их на удобные для перевода отрывки."
+
+#: templates/tolmach/landing.html:143
+msgid "Translate comfortably"
+msgstr "Переводим с комфортом"
+
+#: templates/tolmach/landing.html:144
+msgid ""
+"Translate the text using glossaries, translation memory databases, machine "
+"translation systems and prepared dictionaries."
+msgstr ""
+"Переводим текст с использованием глоссариев, баз памяти перевода, систем "
+"машинного перевода и готовых словарей."
+
+#: templates/tolmach/landing.html:154
+msgid "How it works:"
+msgstr "Как это работает:"
+
+#: templates/tolmach/landing.html:188
+msgid "of"
+msgstr "из"
+
+#: templates/tolmach/landing.html:194
+msgid "Personal page"
+msgstr "Личная страница"
+
+#: templates/tolmach/landing.html:196
+msgid ""
+"This is a user's personal page. You do not need to fill out tedious "
+"questionnaires during registration - we can get your stuff from your social "
+"network profile."
+msgstr ""
+"Это личная страница пользователя. Вам не нужно заполнять нудных анкет при "
+"регистрации - мы сами все перенесем из Вашего профиля в социальной сети."
+
+#: templates/tolmach/landing.html:199
+msgid ""
+"Here you can see all the statistics that present your experience as "
+"translator: total number of translated fragments and graphs showing which "
+"language pairs do you prefer to work with."
+msgstr ""
+"Здесь содержится статистика, отображающая Ваш опыт как переводчика: тут и "
+"общее количество переведенных Вами фрагментов текста, и графики, "
+"показывающие, с каких языков на какие вы предпочитаете переводить, и полный "
+"список Ваших проектов."
+
+#: templates/tolmach/landing.html:203
+msgid "Collective translations"
+msgstr "Коллективные переводы"
+
+#: templates/tolmach/landing.html:205
+msgid ""
+"Now several interpreters can comfortably work with one document "
+"simultaneously — share the responsibility for exact pieces of text between "
+"different translators, offer different translations of the same fragments, "
+"choosing, in the end, the best offered fragments."
+msgstr ""
+"Теперь нескольким переводчикам можно комфортно работать над одним документом "
+"одновременно — разделять ответственность за отдельные фрагменты текста между "
+"разными переводчиками, предлагать разные варианты переводов одних и тех же "
+"мест, выбирая, в итоге, наиболее качественные."
+
+#: templates/tolmach/landing.html:208
+msgid ""
+"Team editor now can watch the whole process live — he will not have to spend "
+"huge amount of time to wait for the results of translation, and translators "
+"will be able to get feedback almost immediately after translation "
+"publication."
+msgstr ""
+"Редактор может наблюдать весь процесс вживую — ему не придётся больше "
+"тратить огромное количество времени на ожидание результатов перевода, а "
+"переводчики смогут получить обратную связь по качеству сделанного перевода "
+"буквально сразу после его публикации."
+
+#: templates/tolmach/landing.html:212
+msgid "Multilingual translations"
+msgstr "Многоязычные переводы"
+
+#: templates/tolmach/landing.html:214
+msgid ""
+"No need to upload the same document several times - it is possible to "
+"translate the same one into several languages at once."
+msgstr ""
+"Нет необходимости загружать один и тот же документ по несколько раз - можно "
+"переводить один и тот же на несколько языков сразу."
+
+#: templates/tolmach/landing.html:218
+msgid "Translation memory databases and glossaries"
+msgstr "Базы памяти и глоссарии"
+
+#: templates/tolmach/landing.html:220
+msgid ""
+"Translation memory databases help you to translate similar documents faster, "
+"reusing previously made translations."
+msgstr ""
+"Базы памяти перевода помогут вам быстрее переводить схожие документы, "
+"повторно используя уже сделанные ранее переводы."
+
+#: templates/tolmach/landing.html:223
+msgid ""
+"Correctly formatted glossaries will help to maintain a consistent style of "
+"translation, regardless of whether you work alone or in a group."
+msgstr ""
+"Правильно составленные глоссарии помогут соблюсти единообразие стиля "
+"перевода, вне зависимости от того, работаете ли вы один или в группе."
+
+#: templates/tolmach/landing.html:227
+msgid "Only translation, nothing more"
+msgstr "Только перевод, ничего лишнего"
+
+#: templates/tolmach/landing.html:229
+msgid ""
+"We put a lot of effort to make the «Tolmach» interface as easy and "
+"minimalistic as possible."
+msgstr ""
+"Мы приложили немало усилий, чтобы сделать интерфейс «Толмача» как можно "
+"более лёгким и минималистичным."
+
+#: templates/tolmach/landing.html:232
+msgid ""
+"And despite the fact that we have already achieved significant results, we "
+"are constantly looking for new opportunities to make «Tolmach» even more "
+"simple and convenient."
+msgstr ""
+"И, несмотря на то, что мы уже добились значительных результатов, мы "
+"постоянно ищем новые возможности сделать работу с «Толмачом» ещё более "
+"простой и удобной."
+
+#: templates/tolmach/landing.html:236
+msgid "Visual progress"
+msgstr "Наглядный прогресс"
+
+#: templates/tolmach/landing.html:238
+msgid ""
+"Evaluate the integrity and consistency of the translated text without being "
+"distracted from the process of translation, literally by a single click."
+msgstr ""
+"Оценивайте цельность и согласованность уже переведённого текста не "
+"отвлекаясь от процесса перевода, буквально нажатием одной кнопки."
+
+#: templates/tolmach/landing.html:242
+msgid "Advanced formatting"
+msgstr "Сложное форматирование"
+
+#: templates/tolmach/landing.html:244
+msgid ""
+"Documents with complex formatting is not a problem for the «Tolmach». You "
+"don't need to think about how the text was formatted in the original "
+"document. Was it bold, italic, or underlined. All this does not matter in "
+"the translating process and should not distract you from what is most "
+"important. And in order to save the formatting of the translated document "
+"similar to the original, «Tolmach» will tell you where to make the necessary "
+"notes."
+msgstr ""
+"Документы со сложным форматированием тоже не проблема для «Толмача». Вам не "
+"нужно думать о том, каким образом был отформатирован текст в оригинальном "
+"документе. Был ли он полужирным, наклонным или подчёркнутым. Всё это "
+"совершенно не важно в процессе перевода и не должно отвлекать вас от самого "
+"главного. А чтобы переведённый документ сохранял форматирование, схожее с "
+"оригинальным, «Толмач» подскажет, где сделать нужные пометки."
+
+#: templates/tolmach/landing.html:248
+msgid "Machine translation systems"
+msgstr "Машинные переводы"
+
+#: templates/tolmach/landing.html:250
+msgid ""
+"Despite the fact that machine translations result texts' quality is far from "
+"perfect, they can be a good help during the initial stages of translation. "
+"They help to make an initial, very rough translation on the basis of which "
+"the final, much more high-quality translation is built."
+msgstr ""
+"Несмотря на то, что машинные переводы по качеству выдаваемого текста ещё "
+"далеки от совершенства, они становятся хорошим подспорьем на начальных "
+"этапах перевода. Они помогают быстро сделать первичный, очень черновой "
+"перевод, на основе которого впоследствии строится финальный, гораздо более "
+"качественный перевод."
+
+#: templates/tolmach/landing.html:254
+msgid "Dictionaries"
+msgstr "Словари"
+
+#: templates/tolmach/landing.html:256
+msgid ""
+"When you see an unfamiliar word, you don't need to interrupt the translating "
+"process to use an external dictionary. You can just select the word and "
+"translate it in one click using the «Tolmach» inner dictionary. Dictionary "
+"database is not static and is being constantly updated."
+msgstr ""
+"Чтобы не прерывать процесс перевода при встрече неизвестного слова, можно "
+"возпользоваться встроенными в «Толмач» словарями. Словарная база не стоит на "
+"месте и постоянно пополняется."
+
+#: templates/tolmach/landing.html:269
+msgid "Try «Tolmach».<br> It's great."
+msgstr "Попробуйте «Толмач».<br> Это здорово."
+
+#: templates/tolmach/landing.html:271
+msgid ""
+"Just register or log in to the service using your Vkontakte, Facebook or "
+"Twitter account."
+msgstr ""
+"Просто зарегистрируйтесь или войдите в сервис через Ваш аккаунт вконтакте, "
+"фэйсбуке или твиттере."
+
+#: templates/tolmach/landing.html:274
+msgid ""
+"If you don't like it – just log out of your account. But, we think you'll "
+"like it:)"
+msgstr ""
+"Если Вам не понравится – просто выйдите из своей учетной записи. Но, мы "
+"думаем, Вам понравится:)"
+
+#: templates/tolmach/landing.html:280
+msgid "rubles you need to use the service."
+msgstr "рублей вам нужно, чтобы пользоваться сервисом."
+
+#: templates/tolmach/landing.html:286
+msgid "that's how many fragments we have already translated"
+msgstr "вот сколько предложений мы уже перевели"
+
+#: templates/tolmach/landing.html:292
+msgid ""
+"the answer to the ultimate question of life, the universe and everything"
+msgstr "ответ на главный вопрос жизни, вселенной и всего остального"
+
+#: templates/tolmach/main.html:6
+msgid "How it works?"
+msgstr "Как это работает?"
+
+#: templates/tolmach/main.html:7
+msgid "Uploading docs"
+msgstr "Загружаем документы"
+
+#: templates/tolmach/main.html:8
+msgid "Right now only plain text and DOCX formats are supported."
+msgstr ""
+"На данный момент организована работа с документами в формате DOCX и "
+"неформатированным текстом."
+
+#: templates/tolmach/main.html:9
+msgid "Extracting data"
+msgstr "Извлекаем данные"
+
+#: templates/tolmach/main.html:10
+msgid ""
+"Parsing uploaded documents, extracting all useful text data and splitting "
+"them into translating-comfortable segments."
+msgstr ""
+"Разбираем полученные документы, извлекаем все полезные текстовые данные и "
+"разбиваем их на удобные для перевода отрывки."
+
+#: templates/tolmach/main.html:11
+msgid "Calling for help"
+msgstr "Зовём коллег"
+
+#: templates/tolmach/main.html:12
+msgid ""
+"Invite your old colleagues to help you with translating or find some new "
+"right here!"
+msgstr ""
+"Приглашайте к работе над Вашим проектом своих старых коллег или ищите новых, "
+"не отрываясь от перевода."
+
+#: templates/tolmach/main.html:13
+msgid "Translating"
+msgstr "Переводим"
+
+#: templates/tolmach/main.html:14
+msgid ""
+"Translating texts using glossaries, translation memory databases, machine "
+"translations and different dictionaries."
+msgstr ""
+"Переводим текст с использованием глоссариев, баз памяти перевода, систем "
+"машинного перевода и готовых словарей."
+
+#: templates/tolmach/main.html:15
+msgid "Finishing translation"
+msgstr "Получаем готовый перевод"
+
+#: templates/tolmach/main.html:16
+msgid ""
+"Post-translating edition and translation export with close-to-original "
+"formatting."
+msgstr ""
+"Пост-переводная редактура документов и экспорт готовых переводов с "
+"сохранением оригинального форматирования."
+
+#: templates/tolmach/organization.html:5 templates/tolmach/profile.html:9
+#: templates/tolmach/view_user.html:8
+msgid "Start new"
+msgstr "Начать новый"
+
+#: templates/tolmach/organization.html:6 templates/tolmach/profile.html:12
+#: templates/translations/projects.html:8
+msgid "There're no projects here at the moment."
+msgstr "Тут пока нет ни одного проекта"
+
+#: templates/tolmach/organization.html:8 tolmach/views.py:249
+#: tolmach/views.py:281
+msgid "Members"
+msgstr "Участники"
+
+#: templates/tolmach/organization.html:62 templates/tolmach/profile.html:67
+#: templates/translations/projects.html:31
+msgid "Click this button to create new project"
+msgstr "Нажмите, чтобы создать новый проект"
+
+#: templates/tolmach/organizations.html:5
+msgid "There're no organizations here at the moment."
+msgstr "Тут пока нет ни одной организации"
+
+#: templates/tolmach/organizations.html:31
+#, python-format
+msgid ""
+"\n"
+"%(number)s member\n"
+msgid_plural ""
+"\n"
+"%(number)s members\n"
+msgstr[0] ""
+"\n"
+"%(number)s участник\n"
+msgstr[1] ""
+"\n"
+"%(number)s участника\n"
+msgstr[2] ""
+"\n"
+"%(number)s участников\n"
+
+#: templates/tolmach/organizations.html:101
+msgid "Click this button to create new organization"
+msgstr "Нажмите, чтобы создать новую организацию"
+
+#: templates/tolmach/organizations.html:101
+msgid "Create new"
+msgstr "Создать новую"
+
+#: templates/tolmach/partial/add_org_participant_modal.html:2
+#: templates/translations/partial/add_participant_modal.html:2
+#: templates/translations/view-text.html:18
+msgid "Copied!"
+msgstr "Скопировано!"
+
+#: templates/tolmach/partial/add_org_participant_modal.html:8
+msgid "Invite organization participant"
+msgstr "Пригласить участника организации"
+
+#: templates/tolmach/partial/add_org_participant_modal.html:13
+#: templates/translations/partial/add_participant_modal.html:57
+msgid "Invite users from all over the world via link:"
+msgstr "Пригласите переводчиков со всего мира с помощью ссылки:"
+
+#: templates/tolmach/partial/add_org_participant_modal.html:35
+#: templates/translations/partial/add_participant_modal.html:79
+msgid "or find one among the users of Tolma.ch:"
+msgstr "или найдите среди пользователей «Толмача»:"
+
+#: templates/tolmach/partial/add_org_participant_modal.html:42
+#: templates/translations/partial/add_participant_modal.html:86
+msgid "Enter nick or name"
+msgstr "Введите имя или ник"
+
+#: templates/tolmach/partial/add_org_participant_modal.html:56
+#: templates/tolmach/partial/organization_members.html:51
+msgid "Invite"
+msgstr "Пригласить"
+
+#: templates/tolmach/partial/all_messages_modal.html:28
+msgid "You were removed from the project"
+msgstr "Вы были исключены из проекта"
+
+#: templates/tolmach/partial/all_messages_modal.html:29
+msgid "You were invited to the project"
+msgstr "Вы были приглашены в проект"
+
+#: templates/tolmach/partial/all_messages_modal.html:30
+msgid "Your translation was edited. Original text:"
+msgstr "Ваш перевод был отредактирован. Оригинальный текст:"
+
+#: templates/tolmach/partial/all_messages_modal.html:32
+#: templates/tolmach/partial/all_messages_modal.html:39
+msgid "New text:"
+msgstr "Новый текст:"
+
+#: templates/tolmach/partial/all_messages_modal.html:35
+#: templates/tolmach/partial/all_messages_modal.html:42
+msgid "Go to fragment"
+msgstr "Перейти к фрагменту"
+
+#: templates/tolmach/partial/all_messages_modal.html:38
+msgid ""
+"Translator edited one of his already approved translations. It was "
+"disapproved now."
+msgstr ""
+"Переводчик отредактировал один из своих уже утверждённых переводов. Теперь "
+"этот перевод нужно утвердить заново."
+
+#: templates/tolmach/partial/download_translated_document.html:29
+#: templates/tolmach/partial/download_translated_document.html:90
+msgid "Download translated document"
+msgstr "Скачать переведённый документ"
+
+#: templates/tolmach/partial/download_translated_document.html:34
+msgid ""
+"Hi! Tolma.ch is a non-commercial project, so if it was useful for you and "
+"you liked it, you can thank us with a donation:"
+msgstr ""
+"Привет! Tolma.ch - это некоммерческий проект, поэтому если он был вам "
+"полезен и понравился, вы можете отблагодарить нас пожертвованием:"
+
+#: templates/tolmach/partial/download_translated_document.html:54
+msgid "Credit card"
+msgstr "Банковская карта"
+
+#: templates/tolmach/partial/download_translated_document.html:59
+msgid "ЮMoney"
+msgstr "ЮMoney"
+
+#: templates/tolmach/partial/download_translated_document.html:67
+msgid "Message (optional)"
+msgstr "Комментарий (по желанию)"
+
+#: templates/tolmach/partial/download_translated_document.html:74
+msgid "Donate"
+msgstr "Пожертвовать"
+
+#: templates/tolmach/partial/download_translated_document.html:83
+msgid "Download variants"
+msgstr "Варианты скачивания"
+
+#: templates/tolmach/partial/download_translated_document.html:96
+msgid "Download bilingual XLSX"
+msgstr "Скачать двуязычный XLSX"
+
+#: templates/tolmach/partial/download_translated_document.html:102
+msgid "Download as PO-file"
+msgstr "Скачать как PO"
+
+#: templates/tolmach/partial/edit_profile_modal.html:8
+#: templates/tolmach/partial/profile-sidebar.html:38
+msgid "Edit Profile"
+msgstr "Редактировать профиль"
+
+#: templates/tolmach/partial/edit_profile_modal.html:27
+#: templates/tolmach/partial/edit_profile_modal.html:31
+#: templates/tolmach/partial/settings/profile-tab.html:45
+#: templates/tolmach/partial/settings/profile-tab.html:49
+msgid "Nickname"
+msgstr "Псевдоним"
+
+#: templates/tolmach/partial/edit_profile_modal.html:37
+#: templates/tolmach/partial/edit_profile_modal.html:41
+#: templates/tolmach/partial/settings/profile-tab.html:55
+#: templates/tolmach/partial/settings/profile-tab.html:59
+msgid "First Name"
+msgstr "Имя"
+
+#: templates/tolmach/partial/edit_profile_modal.html:47
+#: templates/tolmach/partial/edit_profile_modal.html:51
+#: templates/tolmach/partial/settings/profile-tab.html:65
+#: templates/tolmach/partial/settings/profile-tab.html:69
+msgid "Last Name"
+msgstr "Фамилия"
+
+#: templates/tolmach/partial/edit_profile_modal.html:57
+#: templates/tolmach/partial/edit_profile_modal.html:61
+#: templates/tolmach/partial/settings/profile-tab.html:75
+#: templates/tolmach/partial/settings/profile-tab.html:79
+msgid "Website"
+msgstr "Адрес сайта"
+
+#: templates/tolmach/partial/edit_profile_modal.html:74
+#: templates/tolmach/partial/settings/profile-tab.html:90
+#: templates/translations/partial/add_glossary_modal.html:89
+#: templates/translations/partial/add_tmx_modal.html:47
+#: templates/translations/partial/edit_text_modal.html:136
+#: templates/translations/partial/view_text/to_glossary_modal.html:41
+#: templates/translations/view-text.html:14
+msgid "Save"
+msgstr "Сохранить"
+
+#: templates/tolmach/partial/landing_javascript.html:107
+#: templates/tolmach/partial/landing_javascript.html:147
+#: templates/tolmach/partial/landing_javascript.html:191
+msgid "Password is required field"
+msgstr "Необходимо указать пароль"
+
+#: templates/tolmach/partial/landing_javascript.html:143
+#: templates/tolmach/partial/landing_javascript.html:183
+#: templates/tolmach/partial/landing_javascript.html:225
+msgid "Username is required field"
+msgstr "Необходимо указать логин"
+
+#: templates/tolmach/partial/landing_javascript.html:187
+msgid "Email is required field"
+msgstr "Необходимо указать почтовый ящик"
+
+#: templates/tolmach/partial/new_organization_modal.html:3
+msgid "Create organization"
+msgstr "Создать организацию"
+
+#: templates/tolmach/partial/new_organization_modal.html:4
+msgid "Organization name"
+msgstr "Название организации"
+
+#: templates/tolmach/partial/new_organization_modal.html:5
+#: templates/translations/partial/add_text_modal.html:2
+#: templates/translations/partial/new_project_modal.html:5
+msgid "Advanced options"
+msgstr "Дополнительные параметры"
+
+#: templates/tolmach/partial/new_organization_modal.html:6
+msgid "Short organization name"
+msgstr "Краткое название организации"
+
+#: templates/tolmach/partial/new_organization_modal.html:7
+#: templates/tolmach/view_user.html:12
+#: templates/translations/partial/new_project_modal.html:7
+msgid "Short project description"
+msgstr "Краткое описание проекта"
+
+#: templates/tolmach/partial/new_organization_modal.html:8
+#: templates/translations/partial/new_project_modal.html:8
+msgid "public"
+msgstr "публичный"
+
+#: templates/tolmach/partial/new_organization_modal.html:9
+#: templates/translations/partial/new_project_modal.html:9
+msgid "All users can see your project"
+msgstr "Все пользователи смогут видеть ваш проект"
+
+#: templates/tolmach/partial/new_organization_modal.html:10
+#: templates/translations/partial/new_project_modal.html:10
+msgid "private"
+msgstr "приватный"
+
+#: templates/tolmach/partial/new_organization_modal.html:11
+#: templates/translations/partial/new_project_modal.html:11
+msgid "Only invited users can see your project"
+msgstr "Только приглашённые пользователи смогут видеть ваш проект"
+
+#: templates/tolmach/partial/new_organization_modal.html:12
+msgid "Create"
+msgstr "Создать"
+
+#: templates/tolmach/partial/organization_members.html:18 tolmach/views.py:146
+msgid "owner"
+msgstr "владелец"
+
+#: templates/tolmach/partial/organization_members.html:25
+#: templates/tolmach/partial/organization_members.html:29 tolmach/views.py:148
+msgid "admin"
+msgstr "админ"
+
+#: templates/tolmach/partial/organization_members.html:36
+#: templates/translations/partial/add_participant_modal.html:131
+msgid "Remove participant"
+msgstr "Удалить участника"
+
+#: templates/tolmach/partial/organization_members.html:51
+msgid "Click this button to invite users to your organization"
+msgstr "Нажмите, чтобы пригласить пользователей в вашу организацию"
+
+#: templates/tolmach/partial/organization_settings.html:6
+msgid "API-key:"
+msgstr "API-ключ:"
+
+#: templates/tolmach/partial/profile-sidebar.html:37
+msgid "Click this button to edit your name and change profile picture"
+msgstr "Нажмите эту кнопку, чтобы сменить имя или фото"
+
+#: templates/tolmach/partial/profile-sidebar.html:51
+msgid "Got questions?"
+msgstr "Есть вопросы?"
+
+#: templates/tolmach/partial/register_modal.html:14
+msgid "One-click sign up and login:"
+msgstr "Войти и зарегистрироваться в один клик"
+
+#: templates/tolmach/partial/register_modal.html:19
+msgid "or"
+msgstr "либо"
+
+#: templates/tolmach/partial/register_modal.html:23
+msgid "Log in using password:"
+msgstr "Войти по паролю"
+
+#: templates/tolmach/partial/register_modal.html:31
+#: templates/tolmach/partial/register_modal.html:69
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: templates/tolmach/partial/register_modal.html:38
+#: templates/tolmach/partial/register_modal.html:83
+#: templates/tolmach/partial/register_modal.html:145
+msgid "Password"
+msgstr "Пароль"
+
+#: templates/tolmach/partial/register_modal.html:50
+#: templates/tolmach/partial/register_modal.html:102
+msgid "Forgot your password?"
+msgstr "Забыли пароль?"
+
+#: templates/tolmach/partial/register_modal.html:53
+#: templates/tolmach/partial/register_modal.html:61
+#: templates/tolmach/partial/register_modal.html:108
+msgid "Sign up"
+msgstr "Регистрация"
+
+#: templates/tolmach/partial/register_modal.html:56
+msgid "Log in"
+msgstr "Войти"
+
+#: templates/tolmach/partial/register_modal.html:76
+#: templates/tolmach/partial/settings/profile-tab.html:21
+#: templates/tolmach/partial/settings/profile-tab.html:25
+msgid "Email"
+msgstr "Почтовый адрес"
+
+#: templates/tolmach/partial/register_modal.html:90
+#: templates/tolmach/partial/register_modal.html:152
+msgid "Password confirmation"
+msgstr "Подтвердите пароль"
+
+#: templates/tolmach/partial/register_modal.html:105
+#: templates/tolmach/partial/register_modal.html:126
+msgid "Authorization"
+msgstr "Авторизация"
+
+#: templates/tolmach/partial/register_modal.html:113
+#: templates/tolmach/partial/register_modal.html:132
+msgid "Reset password"
+msgstr "Сбросить пароль"
+
+#: templates/tolmach/partial/register_modal.html:121
+msgid "username"
+msgstr "Имя пользователя"
+
+#: templates/tolmach/partial/register_modal.html:129
+msgid "Registration"
+msgstr "Регистрация"
+
+#: templates/tolmach/partial/register_modal.html:137
+msgid "Type new password:"
+msgstr "Введите новый пароль:"
+
+#: templates/tolmach/partial/register_modal.html:155
+msgid "Submit"
+msgstr "Отправить"
+
+#: templates/tolmach/partial/remove_org_participant_popover.html:4
+#: templates/translations/partial/glossary_remove_popover.html:4
+#: templates/translations/partial/participant_remove_popover.html:4
+#: templates/translations/partial/project_leave_popover.html:4
+#: templates/translations/partial/project_remove_popover.html:4
+#: templates/translations/partial/text_remove_popover.html:4
+#: templates/translations/partial/tmx_remove_popover.html:4
+msgid "Are you sure?"
+msgstr "Вы уверены?"
+
+#: templates/tolmach/partial/remove_org_participant_popover.html:9
+#: templates/translations/partial/glossary_remove_popover.html:9
+#: templates/translations/partial/participant_remove_popover.html:9
+#: templates/translations/partial/project_leave_popover.html:9
+#: templates/translations/partial/project_remove_popover.html:9
+#: templates/translations/partial/text_remove_popover.html:9
+#: templates/translations/partial/tmx_remove_popover.html:9
+msgid "Yes"
+msgstr "Да"
+
+#: templates/tolmach/partial/remove_org_participant_popover.html:10
+#: templates/translations/partial/glossary_remove_popover.html:10
+#: templates/translations/partial/participant_remove_popover.html:10
+#: templates/translations/partial/project_leave_popover.html:10
+#: templates/translations/partial/project_remove_popover.html:10
+#: templates/translations/partial/text_remove_popover.html:10
+#: templates/translations/partial/tmx_remove_popover.html:10
+msgid "No"
+msgstr "Нет"
+
+#: templates/tolmach/partial/settings/interface-tab.html:6
+#: templates/translations/view-text.html:19
+msgid "Original"
+msgstr "Оригинал"
+
+#: templates/tolmach/partial/settings/interface-tab.html:7
+#: templates/translations/view-text.html:20
+msgid "Translation"
+msgstr "Перевод"
+
+#: templates/tolmach/partial/settings/interface-tab.html:8
+msgid "Font size:"
+msgstr "Размер шрифта:"
+
+#: templates/tolmach/partial/settings/interface-tab.html:9
+msgid "TM percentage:"
+msgstr ""
+
+#: templates/tolmach/partial/settings/profile-tab.html:31
+msgid "Email confirmed"
+msgstr "Подтверждёно"
+
+#: templates/tolmach/partial/settings/profile-tab.html:34
+msgid "Email not confirmed"
+msgstr "Не подтверждено"
+
+#: templates/tolmach/partial/settings/profile-tab.html:36
+msgid "Resend confirmation"
+msgstr "Выслать новую ссылку"
+
+#: templates/tolmach/partial/settings/profile-tab.html:40
+msgid "No email set"
+msgstr "Почта не указана"
+
+#: templates/tolmach/profile.html:5 templates/tolmach/view_user.html:5
+#: translations/views.py:239 translations/views.py:260
+msgid "Statistics"
+msgstr "Статистика"
+
+#: templates/tolmach/profile.html:6 templates/tolmach/view_user.html:6
+msgid "Total"
+msgstr "Всего"
+
+#: templates/tolmach/profile.html:8 tolmach/views.py:176 tolmach/views.py:178
+#: tolmach/views.py:213 tolmach/views.py:215 tolmach/views.py:249
+#: tolmach/views.py:251 tolmach/views.py:281 tolmach/views.py:283
+msgid "Organizations"
+msgstr "Организации"
+
+#: templates/tolmach/profile.html:10
+msgid "Overview"
+msgstr "Обзор"
+
+#: templates/tolmach/profile.html:11
+msgid "Recent projects"
+msgstr "Недавние проекты"
+
+#: templates/tolmach/profile.html:82 templates/tolmach/view_user.html:79
+msgid "fragment translated."
+msgid_plural "fragments translated."
+msgstr[0] "фрагмент переведён"
+msgstr[1] "фрагмента переведено"
+msgstr[2] "фрагментов переведено"
+
+#: templates/tolmach/settings.html:5
+msgid "Profile"
+msgstr "Профиль"
+
+#: templates/tolmach/settings.html:6
+msgid "Interface"
+msgstr "Интерфейс"
+
+#: templates/tolmach/view_user.html:9
+#: templates/translations/partial/new_project_modal.html:3
+msgid "Add project"
+msgstr "Добавить проект"
+
+#: templates/tolmach/view_user.html:10
+#: templates/translations/partial/new_project_modal.html:4
+msgid "Project name"
+msgstr "Название проекта"
+
+#: templates/tolmach/view_user.html:11
+#: templates/translations/partial/new_project_modal.html:6
+msgid "Short project name"
+msgstr "Краткое название проекта"
+
+#: templates/tolmach/view_user.html:13 templates/translations/projects.html:7
+msgid "Public"
+msgstr "Публичные"
+
+#: templates/tolmach/view_user.html:14
+msgid "Private"
+msgstr "Приватный"
+
+#: templates/tolmach/view_user.html:15
+#: templates/translations/partial/add_glossary_modal.html:88
+#: templates/translations/partial/add_participant_modal.html:93
+#: templates/translations/partial/add_project_translation_modal.html:29
+#: templates/translations/partial/add_tmx_modal.html:46
+#: templates/translations/partial/new_project_modal.html:12
+#: templates/translations/partial/view_text/to_glossary_modal.html:40
+#: templates/translations/project.html:173
+#: templates/translations/project.html:175
+#: templates/translations/project.html:316
+#: templates/translations/view-text.html:13
+msgid "Add"
+msgstr "Добавить"
+
+#: templates/translations/partial/add_glossary_modal.html:15
+#: templates/translations/partial/view_text/to_glossary_modal.html:8
+msgid "Add glossary"
+msgstr "Добавить глоссарий"
+
+#: templates/translations/partial/add_glossary_modal.html:17
+#: templates/translations/partial/view_text/to_glossary_modal.html:10
+msgid "Edit glossary"
+msgstr "Редактировать глоссарий"
+
+#: templates/translations/partial/add_glossary_modal.html:27
+msgid "Upload"
+msgstr "Загрузить"
+
+#: templates/translations/partial/add_glossary_modal.html:32
+msgid "Manual add"
+msgstr "Добавить вручную"
+
+#: templates/translations/partial/add_glossary_modal.html:38
+msgid "Glossary name"
+msgstr "Название глоссария"
+
+#: templates/translations/partial/add_participant_modal.html:52
+msgid "Add participant"
+msgstr "Добавить участника"
+
+#: templates/translations/partial/add_participant_modal.html:158
+msgid "Done"
+msgstr "Готово"
+
+#: templates/translations/partial/add_project_translation_modal.html:7
+msgid "Add project translation"
+msgstr "Добавить перевод проекта"
+
+#: templates/translations/partial/add_project_translation_modal.html:15
+#: templates/translations/partial/new_project_modal.html:52
+msgid "Target language"
+msgstr "Язык перевода:"
+
+#: templates/translations/partial/add_text_modal.html:3
+msgid "Fragmentation type:"
+msgstr "Способ фрагментации:"
+
+#: templates/translations/partial/add_text_modal.html:4
+msgid "By sentence"
+msgstr "По предложению"
+
+#: templates/translations/partial/add_text_modal.html:5
+msgid "Line by line"
+msgstr "Построчно"
+
+#: templates/translations/partial/add_text_modal.html:23
+msgid "Add document"
+msgstr "Добавить документ"
+
+#: templates/translations/partial/add_text_modal.html:29
+#: templates/translations/partial/edit_text_modal.html:13
+msgid "Title"
+msgstr "Название:"
+
+#: templates/translations/partial/add_text_modal.html:70
+msgid "Get only useful data with Reader View"
+msgstr "Извлечь только полезные данные с помощью Режима Чтения"
+
+#: templates/translations/partial/add_text_modal.html:84
+msgid "Upload file"
+msgstr "Загрузить файл"
+
+#: templates/translations/partial/add_text_modal.html:89
+msgid "Insert plain text"
+msgstr "Вставить текст"
+
+#: templates/translations/partial/add_text_modal.html:106
+msgid ""
+"Click here to upload file or drag file here to upload.</br> Supported "
+"formats: DOCX, XLSX, SRT, ASS, POT, PO, MO, TXT."
+msgstr ""
+"Нажмите или перетащите файл для загрузки.</br> Поддерживаемые форматы: DOCX, "
+"XLSX,SRT, ASS, POT, PO, MO, TXT."
+
+#: templates/translations/partial/add_tmx_modal.html:8
+msgid "Add TMX"
+msgstr "Добавить базу памяти"
+
+#: templates/translations/partial/add_tmx_modal.html:10
+msgid "Edit TMX"
+msgstr "Редактировать базу памяти"
+
+#: templates/translations/partial/add_tmx_modal.html:16
+msgid "TMX name"
+msgstr "Название базы памяти"
+
+#: templates/translations/partial/dictionary_modal.html:3
+#: templates/translations/view-text.html:22
+msgid "enter word"
+msgstr "введите слово"
+
+#: templates/translations/partial/dictionary_modal.html:4
+#: templates/translations/view-text.html:23
+msgid "Nothing found"
+msgstr "Не найдено"
+
+#: templates/translations/partial/edit_text_modal.html:7
+msgid "Edit document"
+msgstr "Редактировать документ"
+
+#: templates/translations/partial/edit_text_modal.html:24
+msgid "Enable machine translation"
+msgstr "Включить машинный перевод"
+
+#: templates/translations/partial/edit_text_modal.html:42
+msgid "Document statistics"
+msgstr "Статистика документа"
+
+#: templates/translations/partial/edit_text_modal.html:45
+#: templates/translations/partial/edit_text_modal.html:116
+#: templates/translations/project_stats.html:85
+#: templates/translations/project_stats.html:150
+msgid "Fragments"
+msgstr "Фрагменты"
+
+#: templates/translations/partial/edit_text_modal.html:49
+#: templates/translations/project_stats.html:89
+msgid "total"
+msgstr "всего"
+
+#: templates/translations/partial/edit_text_modal.html:50
+#: templates/translations/project_stats.html:90
+msgid "translated"
+msgstr "переведено"
+
+#: templates/translations/partial/edit_text_modal.html:51
+#: templates/translations/project_stats.html:91
+msgid "approved"
+msgstr "подтверждено"
+
+#: templates/translations/partial/edit_text_modal.html:61
+#: templates/translations/project_stats.html:110
+msgid "Characters in original"
+msgstr "Символов в оригинале"
+
+#: templates/translations/partial/edit_text_modal.html:65
+#: templates/translations/partial/edit_text_modal.html:79
+#: templates/translations/partial/edit_text_modal.html:117
+#: templates/translations/project_stats.html:114
+#: templates/translations/project_stats.html:152
+msgid "with spaces"
+msgstr "с пробелами"
+
+#: templates/translations/partial/edit_text_modal.html:66
+#: templates/translations/partial/edit_text_modal.html:80
+#: templates/translations/partial/edit_text_modal.html:118
+#: templates/translations/project_stats.html:115
+#: templates/translations/project_stats.html:153
+msgid "without spaces"
+msgstr "без пробелов"
+
+#: templates/translations/partial/edit_text_modal.html:75
+msgid "Characters in translation"
+msgstr "Символов в переводе"
+
+#: templates/translations/partial/edit_text_modal.html:90
+#: templates/translations/project_stats.html:140
+msgid "Contribution by members"
+msgstr "Вклад по участникам"
+
+#: templates/translations/partial/edit_text_modal.html:133
+msgid "Delete document"
+msgstr "Удалить документ"
+
+#: templates/translations/partial/new_project_modal.html:43
+msgid "Source language"
+msgstr "Язык оригинала:"
+
+#: templates/translations/partial/select_text_ranges_modal.html:7
+msgid "Select cells for translating"
+msgstr "Выберите ячейки для перевода"
+
+#: templates/translations/partial/select_text_ranges_modal.html:11
+msgid ""
+"If you want exact cells to be translated, just select source range of cells "
+"and than target range, where to store translations. If you want all the "
+"cells to be translated, just click 'Next' whithout selecting any cells."
+msgstr ""
+"Для того, чтобы переводить конкретные ячейки, поочерёдно выделяйте группы "
+"ячеек из которых будет браться исходный текст, и группы в которые будут "
+"сохраняться переводы.Если вы хотите переводить все имеющиеся ячейки, просто "
+"ничего не выделяйте и нажмите Далее"
+
+#: templates/translations/partial/text-page-now-editing-icon.html:3
+msgid "Someone is working on this fragment right now..."
+msgstr "Кто-то работает над этим фрагментом прямо сейчас..."
+
+#: templates/translations/partial/view_text/entry_history_list_content.html:18
+msgid "Approved"
+msgstr "Подтверждено"
+
+#: templates/translations/partial/view_text/entry_history_list_content.html:19
+msgid "Edited"
+msgstr "Исправлено"
+
+#: templates/translations/partial/view_text/entry_history_list_content.html:20
+msgid "Disapproved"
+msgstr "Подтверждение снято"
+
+#: templates/translations/partial/view_text/entry_history_list_content.html:21
+msgid "Created"
+msgstr "Создано"
+
+#: templates/translations/partial/view_text/entry_history_list_content.html:22
+msgid "Deleted"
+msgstr "Удалено"
+
+#: templates/translations/project.html:80
+msgid "Add new translation language"
+msgstr "Добавить новый язык перевода"
+
+#: templates/translations/project.html:93
+msgid "Participants"
+msgstr "Участники"
+
+#: templates/translations/project.html:106
+msgid "Documents"
+msgstr "Документы"
+
+#: templates/translations/project.html:130
+msgid "Fragments total:"
+msgstr "Всего фрагментов:"
+
+#: templates/translations/project.html:131
+msgid "Translated:"
+msgstr "Переведено:"
+
+#: templates/translations/project.html:132
+msgid "Approved:"
+msgstr "Подтверждено:"
+
+#: templates/translations/project.html:133
+msgid "Disabled:"
+msgstr "Заблокировано:"
+
+#: templates/translations/project.html:144
+#: templates/translations/view-text.html:373
+msgid "Options"
+msgstr "Опции"
+
+#: templates/translations/project.html:151
+msgid "Download"
+msgstr "Скачать"
+
+#: templates/translations/project.html:159
+msgid "Document params"
+msgstr "Параметры документа"
+
+#: templates/translations/project.html:175
+msgid "Click here to add new document to translate"
+msgstr "Нажмите, чтобы добавить новый документ для перевода"
+
+#: templates/translations/project.html:229
+msgid "Tools"
+msgstr "Инструменты"
+
+#: templates/translations/project.html:232
+msgid "About"
+msgstr "О проекте"
+
+#: templates/translations/project.html:304
+msgid "Here will be TMXes and glossaries"
+msgstr "Здесь располагаются базы памяти перевода и глоссарии"
+
+#: templates/translations/project.html:308
+msgid "Click here to translation memory or glossary"
+msgstr "Нажмите, чтобы добавить глоссарий или базу памяти переводов"
+
+#: templates/translations/project.html:324
+msgid "Glossary"
+msgstr "Глоссарий"
+
+#: templates/translations/project.html:382
+msgid "Glossaries"
+msgstr "Глоссарии"
+
+#: templates/translations/project.html:410
+msgid "Description"
+msgstr "Описание"
+
+#: templates/translations/project.html:434
+msgid "Project statistics"
+msgstr "Статистика проекта"
+
+#: templates/translations/project.html:439
+msgid "Attention!"
+msgstr "Внимание!"
+
+#: templates/translations/project.html:447
+msgid "Remove Project"
+msgstr "Удалить проект"
+
+#: templates/translations/project.html:457
+msgid "Leave Project"
+msgstr "Покинуть проект"
+
+#: templates/translations/project_stats.html:101
+msgid "Words in original"
+msgstr "Слов в оригинале"
+
+#: templates/translations/project_stats.html:151
+msgid "Words"
+msgstr "Слова"
+
+#: templates/translations/project_stats.html:181
+msgid ""
+"Fragments of original text, that have approved translations made by "
+"participant"
+msgstr ""
+"Фрагменты оригинального текста, имеющие утверждённый перевод, сделанный "
+"участником"
+
+#: templates/translations/project_stats.html:184
+msgid "All fragments created by participant"
+msgstr "Все фрагменты, сделанные участником"
+
+#: templates/translations/project_stats.html:189
+msgid ""
+"Words of original text, that have approved translations made by participant"
+msgstr ""
+"Слова оригинального текста, имеющие утверждённый перевод, сделанный "
+"участником"
+
+#: templates/translations/project_stats.html:192
+msgid "Words of translation text made by participant, that have been approved"
+msgstr "Слова утверждённых переводов, сделанных участником"
+
+#: templates/translations/project_stats.html:195
+msgid "Words of all translation text made by participant"
+msgstr "Слова всех переводов, сделанных участником"
+
+#: templates/translations/project_stats.html:200
+msgid ""
+"Characters of original text, that have approved translations made by "
+"participant"
+msgstr ""
+"Символы оригинального текста, имеющие утрверждённый перевод, сделанный "
+"участником"
+
+#: templates/translations/project_stats.html:203
+msgid "Characters of translations made by participant, that have been approved"
+msgstr "Символы утверждённых переводов, сделанных участником"
+
+#: templates/translations/project_stats.html:206
+msgid "Characters of all translations made by participant"
+msgstr "Символы всех переводов, сделанных участником"
+
+#: templates/translations/project_stats.html:211
+msgid ""
+"Characters of original text, that have approved translations made by "
+"participant (without spaces)"
+msgstr ""
+"Символы оригинального текста, имеющие утверждённый перевод, сделанный "
+"участником (без пробелов)"
+
+#: templates/translations/project_stats.html:214
+msgid ""
+"Characters of translations made by participant, that have been approved "
+"(without spaces)"
+msgstr "Символы утверждённых переводов, сделанных участником (без пробелов)"
+
+#: templates/translations/project_stats.html:217
+msgid "Words of all translated text made by participant (without spaces)"
+msgstr "Символы всех переводов, сделанных участником (без пробелов)"
+
+#: templates/translations/projects.html:5
+msgid "My"
+msgstr "Мои"
+
+#: templates/translations/projects.html:6
+msgid "Third-party"
+msgstr "Сторонние"
+
+#: templates/translations/view-text.html:7
+msgid "Translation variants"
+msgstr "Варианты перевода"
+
+#: templates/translations/view-text.html:8
+msgid "Users translations"
+msgstr "Переводы пользователей"
+
+#: templates/translations/view-text.html:9
+msgid "Translate"
+msgstr "Перевести"
+
+#: templates/translations/view-text.html:10
+msgid "Add your translation"
+msgstr "Добавить свой перевод"
+
+#: templates/translations/view-text.html:11
+msgid "Machine translations"
+msgstr "Машинные переводы"
+
+#: templates/translations/view-text.html:12
+msgid "Translation memory variants"
+msgstr "Варианты перевода из базы памяти"
+
+#: templates/translations/view-text.html:15
+msgid "Remove"
+msgstr "Удалить"
+
+#: templates/translations/view-text.html:16
+msgid "Cancel (Esc)"
+msgstr "Отмена (Esc)"
+
+#: templates/translations/view-text.html:17
+msgid "Skip translation (Alt-S)"
+msgstr "Не переводить фрагмент (Alt-S)"
+
+#: templates/translations/view-text.html:21
+msgid "Add with"
+msgstr "Добавлять с помощью"
+
+#: templates/translations/view-text.html:24
+msgid "To glossary"
+msgstr "В глоссарий"
+
+#: templates/translations/view-text.html:125
+#: templates/translations/view-text.html:405
+msgid "Approve translation"
+msgstr "Утвердить перевод"
+
+#: templates/translations/view-text.html:131
+#: templates/translations/view-text.html:411
+msgid "Edit translation"
+msgstr "Редактировать перевод"
+
+#: templates/translations/view-text.html:148
+#: templates/translations/view-text.html:396
+msgid "Disapprove translation"
+msgstr "Отклонить перевод"
+
+#: templates/translations/view-text.html:161
+msgid "Enable translation"
+msgstr "Переводить фрагмент"
+
+#: templates/translations/view-text.html:174
+#: templates/translations/view-text.html:188
+#: templates/translations/view-text.html:191
+msgid "Copy fragment link"
+msgstr "Скопировать ссылку на фрагмент"
+
+#: templates/translations/view-text.html:206
+msgid "Restore deleted translation"
+msgstr "Восстановить удалённый перевод"
+
+#: templates/translations/view-text.html:216
+msgid "singular:"
+msgstr "един.ч.:"
+
+#: templates/translations/view-text.html:217
+msgid "plural:"
+msgstr "множ.ч.:"
+
+#: templates/translations/view-text.html:379
+msgid "Approve all entries from user"
+msgstr "Утвердить все переводы пользователя"
+
+#: templates/translations/view-text.html:386
+msgid "Disapprove all entries from user"
+msgstr "Отклонить все переводы пользователя"
+
+#: templates/translations/view-text.html:510
+msgid "Here we can see all the fragments text was splitted to"
+msgstr "Здесь фрагменты для перевода, на которые был разбит текст"
+
+#: templates/translations/view-text.html:511
+msgid "Click to expand fragment and begin translation"
+msgstr "Нажмите, чтобы развернуть фрагмент для начала перевода"
+
+#: templates/translations/view-text.html:512
+msgid ""
+"Translation entry form, translation memory variants and machine translations"
+msgstr "Поле ввода, варианты машинного перевода и баз памяти"
+
+#: templates/translations/view-text.html:513
+msgid "Click to add new translation"
+msgstr "Нажмите, чтобы добавить перевод"
+
+#: templates/translations/view-text.html:514
+msgid "Here we can see the whole text"
+msgstr "Здесь отображается весь текст целиком"
+
+#: templates/translations/view-text.html:515
+msgid "Click on the fragment in text to move to its translation form"
+msgstr "Кликните на предложение в тексте, чтобы быстро перейти к его переводу"
+
+#: templates/translations/view-text.html:516
+msgid "Source text"
+msgstr "Исходный текст"
+
+#: templates/translations/view-text.html:517
+msgid "All the text with translated fragments"
+msgstr "Весь текст с включёнными в него сделанными переводами"
+
+#: tolmach/context_processors.py:48
+#, fuzzy, python-format
+#| msgid "Tolma.ch is %(years_count)d year old today!"
+#| msgid_plural "Tolma.ch is %(years_count)d years old today!"
+msgid "Tolma.ch is %(years_count)d year old today!"
+msgid_plural "Tolma.ch is %(years_count)d years old today!"
+msgstr[0] "Толмачу сегодня один год!"
+msgstr[1] "Толмачу сегодня %(years_count)d года!"
+msgstr[2] "Толмачу сегодня %(years_count)d лет!"
+
+#: tolmach/decorators.py:15
+msgid "Organization id is not set"
+msgstr "ID организации не указан"
+
+#: tolmach/decorators.py:20 tolmach/views_ajax.py:26 tolmach/views_ajax.py:51
+#: tolmach/views_ajax.py:55
+msgid "Organization not found"
+msgstr "Организация не найдена"
+
+#: tolmach/views.py:150
+msgid "member"
+msgstr "участник"
+
+#: tolmach/views.py:192 tolmach/views.py:230 tolmach/views.py:265
+#: translations/decorators.py:63 translations/views.py:99
+#: translations/views.py:277 translations/views.py:279
+#: translations/views.py:298 translations/views.py:300
+#: translations/views_ajax.py:91
+msgid "Sorry, no such project here!"
+msgstr "Простите, проект не найден"
+
+#: tolmach/views.py:526
+msgid "Password was reseted. Further instructions were sent to your email."
+msgstr ""
+"Пароль сброшен. Дальнейшие инструкции были отправлены на электронную почту"
+
+#: tolmach/views.py:616
+msgid "New password saved. Please wait for the sign in."
+msgstr "Новый пароль сохранён. Пожалуйста, ожидайте входа в систему."
+
+#: tolmach/views_ajax.py:29 tolmach/views_ajax.py:57 tolmach/views_ajax.py:78
+msgid "You have to be an owner of organization"
+msgstr "Вы должны быть владельцем организации"
+
+#: tolmach/views_ajax.py:41 translations/views_ajax.py:206
+msgid "Project name cannot be empty"
+msgstr "Название проекта не может быть пустым"
+
+#: tolmach/views_ajax.py:82 tolmach/views_ajax.py:118
+#: translations/views_ajax.py:389 translations/views_ajax.py:438
+msgid "User id is not set"
+msgstr "Номер пользователя не указан"
+
+#: tolmach/views_ajax.py:86 tolmach/views_ajax.py:122
+#: translations/views_ajax.py:393 translations/views_ajax.py:442
+msgid "User not found"
+msgstr "Пользователь не найден"
+
+#: tolmach/views_ajax.py:88 tolmach/views_ajax.py:126
+msgid "This user is an owner of organization"
+msgstr "Указанный пользователь - владелец организации"
+
+#: tolmach/views_ajax.py:110 translations/views_ajax.py:430
+msgid "User is already a member of project"
+msgstr "Пользователь уже является участником проекта"
+
+#: tolmach/views_ajax.py:124 translations/decorators.py:23
+#: translations/views_ajax.py:447 translations/views_ajax.py:729
+#: translations/views_ajax.py:865 translations/views_ajax.py:1073
+#: translations/views_ajax.py:1187 translations/views_ajax.py:1196
+#: translations/views_ajax.py:1338
+msgid "Not allowed"
+msgstr "Нет доступа"
+
+#: tolmach/views_ajax.py:153
+msgid "You have to be a manager of the organization"
+msgstr "Вы должны быть владельцем организации"
+
+#: tolmach/views_ajax.py:384
+#, python-brace-format
+msgid ""
+"Sorry, we could not reach the url. Error '{err_msg}'. If everything is "
+"working fine on your side, please save the page to your computer and upload "
+"it as a file."
+msgstr ""
+
+#: translations/apps.py:7
+msgid "translations"
+msgstr "переводы"
+
+#: translations/decorators.py:17
+msgid "text id is not set"
+msgstr "Номер текста не указан"
+
+#: translations/decorators.py:21 translations/decorators.py:41
+#: translations/views_ajax.py:510 translations/views_ajax.py:632
+msgid "Text not found"
+msgstr "Текст не найден"
+
+#: translations/decorators.py:43 translations/views_ajax.py:880
+msgid "Project id is not set"
+msgstr "Номер проекта не указан"
+
+#: translations/decorators.py:69 translations/views.py:42
+#: translations/views.py:43 translations/views.py:388
+msgid "Third-party projects"
+msgstr "Сторонние проекты"
+
+#: translations/utils.py:122
+msgid "File is too big"
+msgstr "Файл слишком большой"
+
+#: translations/utils.py:359 translations/utils.py:391
+msgid "This source language is not supported yet"
+msgstr "Этот язык пока не поддерживается как исходный"
+
+#: translations/utils.py:366 translations/utils.py:399
+msgid "This target language is not supported yet"
+msgstr "Этот язык пока не поддерживается как язык перевода"
+
+#: translations/views.py:148
+#, python-format
+msgid "<br>%(number_count)d action done"
+msgid_plural "<br>%(number_count)d actions done"
+msgstr[0] "<br>%(number_count)d действие"
+msgstr[1] "<br>%(number_count)d действия"
+msgstr[2] "<br>%(number_count)d действий"
+
+#: translations/views.py:234 translations/views.py:328
+msgid "Editor"
+msgstr "Редактор"
+
+#: translations/views.py:235 translations/views.py:329
+msgid "Translator"
+msgstr "Переводчик"
+
+#: translations/views.py:236 translations/views.py:330
+msgid "Spectator"
+msgstr "Наблюдатель"
+
+#: translations/views.py:367 translations/views.py:369
+#: translations/views.py:522
+msgid "Sorry, no such text here!"
+msgstr "Простите, указанный текст не найден"
+
+#: translations/views.py:528
+msgid "Sorry, no such page here!"
+msgstr "Простите, указанная страница не найдена"
+
+#: translations/views.py:580
+msgid "Sorry, no such TM database here!"
+msgstr "Простите, указанная база памяти не найдена"
+
+#: translations/views.py:605
+msgid "Sorry, no such glossary here!"
+msgstr "Простите, указанный глоссарий не найден"
+
+#: translations/views.py:673
+msgid "Readability check"
+msgstr "Проверка Режима Чтения"
+
+#: translations/views_ajax.py:160 translations/views_ajax.py:183
+#: translations/views_ajax.py:277 translations/views_ajax.py:385
+#: translations/views_ajax.py:498 translations/views_ajax.py:634
+#: translations/views_ajax.py:746 translations/views_ajax.py:886
+#: translations/views_ajax.py:1398 translations/views_ajax.py:1440
+#: translations/views_ajax.py:1462 translations/views_ajax.py:1502
+#: translations/views_ajax.py:1523 translations/views_ajax.py:1557
+msgid "You have to be a manager of project"
+msgstr "Вы должны быть менеджером проекта"
+
+#: translations/views_ajax.py:212
+msgid "Project description cannot be empty"
+msgstr "Описание проекта не может быть пустым"
+
+#: translations/views_ajax.py:218
+msgid "Project type is not set"
+msgstr "Тип проекта не указан"
+
+#: translations/views_ajax.py:222
+msgid "Source language is not set"
+msgstr "Язык оригинала не указан"
+
+#: translations/views_ajax.py:226 translations/views_ajax.py:274
+#: translations/views_ajax.py:954
+msgid "Target language is not set"
+msgstr "Язык перевода не указан"
+
+#: translations/views_ajax.py:265
+msgid "Project is not set"
+msgstr "Проект не указан"
+
+#: translations/views_ajax.py:285
+msgid "There is already such project translation"
+msgstr "У проекта уже есть такой перевод"
+
+#: translations/views_ajax.py:351
+msgid "You have to be a manager of the project"
+msgstr "Вы должны быть менеджером проекта"
+
+#: translations/views_ajax.py:372
+msgid "You have to be a member of the project"
+msgstr "Вы должны быть участником проекта"
+
+#: translations/views_ajax.py:395 translations/views_ajax.py:449
+msgid "This user is a manager of project"
+msgstr "Указанный пользователь - менеджер проекта"
+
+#: translations/views_ajax.py:427
+msgid "Wrong membership status, sorry"
+msgstr "Некорректный статус участника, извините"
+
+#: translations/views_ajax.py:457
+msgid "User is not a member of project"
+msgstr "Пользователь не является участником проекта"
+
+#: translations/views_ajax.py:551 translations/views_ajax.py:761
+#: translations/views_ajax.py:910
+msgid "Wrong file type"
+msgstr "Некорректный формат файла"
+
+#: translations/views_ajax.py:628
+msgid "Text id is not set"
+msgstr "Номер текста не указан"
+
+#: translations/views_ajax.py:707 translations/views_ajax.py:775
+#: translations/views_ajax.py:826
+msgid "Glossary not found"
+msgstr "Глоссарий не найден"
+
+#: translations/views_ajax.py:749
+msgid "Glossary name is not set"
+msgstr "Название глоссария не указано"
+
+#: translations/views_ajax.py:767
+msgid "Please, send file or input data manually"
+msgstr "Пожалуйста, загрузите файл или введите данные вручную"
+
+#: translations/views_ajax.py:788 translations/views_ajax.py:801
+msgid "Project translation not found"
+msgstr "Перевод проекта не найден"
+
+#: translations/views_ajax.py:822
+msgid "Glossary id is not set"
+msgstr "Номер глоссария не указан"
+
+#: translations/views_ajax.py:828
+msgid "It's not your glossary"
+msgstr "Это не ваш глоссарий"
+
+#: translations/views_ajax.py:843
+msgid "TMDatabase not found"
+msgstr "База памяти не найдена"
+
+#: translations/views_ajax.py:890
+msgid "TMX name is not set"
+msgstr "Название базы памяти не указано"
+
+#: translations/views_ajax.py:896
+msgid "Target lang is not specified"
+msgstr "Язык перевода не указан"
+
+#: translations/views_ajax.py:900
+msgid "TMX file is not passed"
+msgstr "Формат базы памяти некорректный"
+
+#: translations/views_ajax.py:926
+msgid "TMX id is not set"
+msgstr "Номер базы памяти не указан"
+
+#: translations/views_ajax.py:930
+msgid "TMX not found"
+msgstr "База памяти не найдена"
+
+#: translations/views_ajax.py:932
+msgid "It's not your TMX"
+msgstr "Это не ваша база памяти"
+
+#: translations/views_ajax.py:1094 translations/views_ajax.py:1117
+msgid "Entry id is not set"
+msgstr "Номер фрагмента не указан"
+
+#: translations/views_ajax.py:1139 translations/views_ajax.py:1164
+#: translations/views_ajax.py:1366 translations/views_ajax.py:1408
+#: translations/views_ajax.py:1451 translations/views_ajax.py:1512
+#: translations/views_ajax.py:1675
+msgid "Id is not set"
+msgstr "Номер не указан"
+
+#: translations/views_ajax.py:1169 translations/views_ajax.py:1194
+#: translations/views_ajax.py:1319 translations/views_ajax.py:1333
+#: translations/views_ajax.py:1517 translations/views_ajax.py:1680
+msgid "Not found"
+msgstr "Не найдено"
+
+#: translations/views_ajax.py:1177
+msgid "Language not found"
+msgstr "Язык не найден"
+
+#: translations/views_ajax.py:1184
+msgid "Translation not found"
+msgstr "Перевод не найден"
+
+#: translations/views_ajax.py:1236
+msgid "Entry translation text is not set"
+msgstr "Перевод фрагмента не указан"
+
+#: translations/views_ajax.py:1314
+msgid "entry is not set"
+msgstr "Номер фрагмента не указан"
+
+#: translations/views_ajax.py:1326
+#, fuzzy
+#| msgid "Entry translation text is not set"
+msgid "translation is not set"
+msgstr "Перевод фрагмента не указан"
+
+#: translations/views_ajax.py:1655
+#, fuzzy
+#| msgid "Project is not set"
+msgid "Percentage is not set"
+msgstr "Проект не указан"
+
+#: translations/views_ajax.py:1711
+msgid "TMDB unavaliable at the moment"
+msgstr "Сервер Баз Памяти в данный момент не доступен"
+
+#: translations/views_ajax.py:1920
+msgid "Request should contain JSON-formatted data"
+msgstr ""
+
+#: translations/views_ajax.py:1936 translations/views_ajax.py:1940
+msgid "Something went wrong with the Languagetool server"
+msgstr ""
+
+#~ msgid "Confirmation email sent to:"
+#~ msgstr "Письмо с подтверждающей ссылкой выслано на:"
