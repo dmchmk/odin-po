@@ -6,12 +6,12 @@ import "core:os"
 import "core:bufio"
 import "core:strings"
 
-State :: enum {
-	LookingForEntry,
-	InHeader,
-	InMsgId,
-	InMsgStr,
-	InMsgCtxt,
+Parser :: struct {
+	prev_line: LineType,
+	curr_line: LineType,
+	curr_entry: POEntry,
+	sb: strings.Builder,
+	entries: [dynamic]POEntry,
 }
 
 LineType :: enum {
@@ -27,7 +27,7 @@ LineType :: enum {
 	Value,
 }
 
-line_type :: proc(line: string) -> (result: LineType) {
+line_type :: proc(line: string) -> (line_type: LineType, value: string) {
 	splits, splits_err := strings.split_n(line, " ", 2)
 	if splits_err != nil {
 		fmt.println(splits_err)
@@ -35,26 +35,33 @@ line_type :: proc(line: string) -> (result: LineType) {
 	log.debug(splits)
 
 	current_token := splits[0]
+	value = ""
+	if len(splits) > 1 {
+		value = splits[1]
+	}
 
 	switch current_token {
 	case "":
-		result = LineType.Blank
+		line_type = LineType.Blank
 	case "#":
-		result = LineType.TranslatorComment
+		line_type = LineType.TranslatorComment
 	case "#.":
-		result = LineType.ExtractedComment
+		line_type = LineType.ExtractedComment
 	case "#:":
-		result = LineType.Reference
+		line_type = LineType.Reference
 	case "#,":
-		result = LineType.Flag
+		line_type = LineType.Flag
 	case "#|":
-		result = LineType.PreviousMsgId
+		line_type = LineType.PreviousMsgId
 	case "msgid":
-		result = LineType.MsgId
+		line_type = LineType.MsgId
 	case "msgstr":
-		result = LineType.MsgStr
+		line_type = LineType.MsgStr
 	case:
-		result = LineType.Value
+		if strings.starts_with(line, "\"") {
+			line_type = LineType.Value
+			value = line
+		}
 	}
 
 	delete(splits)
@@ -81,6 +88,8 @@ parse_po_file :: proc(file_path: string) -> (result: []POEntry, err: string) {
 	current_entry: POEntry
 	current_line: int
 
+	p := Parser{}
+
 	for {
 		raw_line, err := bufio.reader_read_string(&r, '\n', context.allocator)
 		if err != nil {
@@ -96,19 +105,47 @@ parse_po_file :: proc(file_path: string) -> (result: []POEntry, err: string) {
 			line = line[len(BOM):]
 		}
 
-		// switch (current_state, line_type(line)) {
-		// case (.LookingForEntry, "msgstr")
-		// }
+		ltype, lvalue := line_type(line)
+		log.debug("parsed line: ", ltype, strings.trim(lvalue, "\""))
 
-		log.debug("line type:", line_type(line))
+		// we want to keep track of the real type of current "Value"
+		if p.curr_line != .Value {
+			p.prev_line = p.curr_line
+		}
+		p.curr_line = ltype
+
+		#partial switch p.curr_line {
+		case .Undefined, .Blank:
+			// starting new entry
+			if p.prev_line == .MsgStr {
+				p.curr_entry.msgstr = strings.to_string(p.sb)
+			}
+			if p.curr_entry.msgid != "" && p.curr_entry.msgstr != "" {
+				append(&p.entries, p.curr_entry)
+			}
+			p.curr_entry = POEntry{}
+		case .MsgId:
+			p.sb = strings.builder_make()
+			strings.write_string(&p.sb, strings.trim(lvalue, "\""))
+		case .MsgStr:
+			p.curr_entry.msgid = strings.to_string(p.sb)
+
+			p.sb = strings.builder_make()
+			strings.write_string(&p.sb, strings.trim(lvalue, "\""))
+		case .Value:
+			strings.write_string(&p.sb, strings.trim(lvalue, "\""))
+		}
 	}
+
+	log.debug("parsed entries", p.entries)
+	// fmt.println(p.entries[0])
 
 	return list_to_return, ""
 }
 
 main :: proc() {
 	context.logger = log.create_console_logger()
-	parse_po_file("tests/feff1.po")
+	parse_po_file("tests/short.po")
 	// parse_po_file("tests/django.po")
 
 	log.destroy_console_logger(context.logger)

@@ -8,8 +8,8 @@ POFile :: struct {
 }
 
 POEntry :: struct {
-	msgid: string,
-	msgstr: string,
+	msgid: string `fmt:"s"`,
+	msgstr: string `fmt:"s"`,
 	msgid_plural: string,
 	msgstr_plural: map[string]string,
 	msgctxt: string,
