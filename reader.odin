@@ -84,8 +84,6 @@ parse_po_file :: proc(file_path: string) -> (result: []POEntry, err: string) {
 	bufio.reader_init_with_buf(&r, os.to_stream(f), buffer[:])
 	defer bufio.reader_destroy(&r)
 
-	current_state: State
-	current_entry: POEntry
 	current_line: int
 
 	p := Parser{}
@@ -106,7 +104,7 @@ parse_po_file :: proc(file_path: string) -> (result: []POEntry, err: string) {
 		}
 
 		ltype, lvalue := line_type(line)
-		log.debug("parsed line: ", ltype, strings.trim(lvalue, "\""))
+		// log.debug("parsed line: ", ltype, strings.trim(lvalue, "\""))
 
 		// we want to keep track of the real type of current "Value"
 		if p.curr_line != .Value {
@@ -134,11 +132,18 @@ parse_po_file :: proc(file_path: string) -> (result: []POEntry, err: string) {
 			strings.write_string(&p.sb, strings.trim(lvalue, "\""))
 		case .Value:
 			strings.write_string(&p.sb, strings.trim(lvalue, "\""))
+		case .Reference:
+			ref_splits := strings.split(lvalue, " ")
+			defer delete(ref_splits)
+
+			for ref in ref_splits {
+				append(&p.curr_entry.references, strings.clone(ref))
+			}
+			fmt.println(p.curr_entry.references)
 		}
 	}
 
 	log.debug("parsed entries", p.entries)
-	// fmt.println(p.entries[0])
 
 	return list_to_return, ""
 }

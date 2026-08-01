@@ -18,7 +18,7 @@ POEntry :: struct {
 
 	// comment: string,
 	// tcomment: string,
-	// occurrences: [dynamic]string,
+	references: [dynamic]string `fmt:"s"`,
 	// flags: [dynamic]string,
 	// previous_msgctxt: string,
 	// previous_msgid: string,
