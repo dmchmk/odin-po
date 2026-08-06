@@ -87,7 +87,8 @@ parse_po_file :: proc(po_file: ^POFile) -> Error {
 	bufio.reader_init_with_buf(&r, os.to_stream(f), buffer[:])
 	defer bufio.reader_destroy(&r)
 
-	p := Parser{}
+	p := new(Parser)
+	defer free(p)
 
 	for {
 		raw_line, err := bufio.reader_read_string(&r, '\n', context.allocator)
@@ -117,6 +118,10 @@ parse_po_file :: proc(po_file: ^POFile) -> Error {
 			// starting new entry
 			if p.prev_line_type == .MsgStr {
 				p.curr_entry.msgstr = strings.to_string(p.sb)
+			}
+
+			if p.prev_line_type == .Blank {
+				continue
 			}
 
 			// if first one is metadata, parse accordingly
@@ -152,7 +157,6 @@ parse_po_file :: proc(po_file: ^POFile) -> Error {
 			for ref in ref_splits {
 				append(&p.curr_entry.references, strings.clone(ref))
 			}
-			fmt.println(p.curr_entry.references)
 		}
 	}
 

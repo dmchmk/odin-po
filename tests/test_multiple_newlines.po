@@ -1,0 +1,16 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+
+#: templates/main/base-logged-in.html:14 templates/main/partial/footer.html:9
+msgid "Blog"
+msgstr "Блог"
+
+
+
+#: templates/email/emailtemplatesbodies.json:14
+#: templates/email/emailtemplatesbodies.json:16
+msgid "Password reset approval"
+msgstr "Подтверждение сброса пароля"
+
