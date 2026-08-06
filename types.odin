@@ -5,6 +5,8 @@ POFile :: struct {
 	wrapwidth: int,
 	encoding: string,
 	check_for_duplicates: bool,
+	entries: [dynamic]POEntry,
+	metadata: map[string]string,
 }
 
 POEntry :: struct {

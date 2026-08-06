@@ -7,11 +7,16 @@ import "core:bufio"
 import "core:strings"
 
 Parser :: struct {
-	prev_line: LineType,
-	curr_line: LineType,
+	prev_line_type: LineType,
+	curr_line_type: LineType,
+	curr_line_number: int,
 	curr_entry: POEntry,
 	sb: strings.Builder,
-	entries: [dynamic]POEntry,
+}
+
+Error :: enum {
+	None,
+	OpenFileError,
 }
 
 LineType :: enum {
@@ -70,12 +75,10 @@ line_type :: proc(line: string) -> (line_type: LineType, value: string) {
 }
 
 
-parse_po_file :: proc(file_path: string) -> (result: []POEntry, err: string) {
-	list_to_return: []POEntry
-
-	f, ferr := os.open(file_path)
+parse_po_file :: proc(po_file: ^POFile) -> Error {
+	f, ferr := os.open(po_file.pofile)
 	if ferr != nil {
-		return nil, fmt.tprintf("%s", ferr)
+		return .OpenFileError
 	}
 	defer os.close(f)
 
@@ -83,8 +86,6 @@ parse_po_file :: proc(file_path: string) -> (result: []POEntry, err: string) {
 	buffer: [1024]byte
 	bufio.reader_init_with_buf(&r, os.to_stream(f), buffer[:])
 	defer bufio.reader_destroy(&r)
-
-	current_line: int
 
 	p := Parser{}
 
@@ -95,31 +96,43 @@ parse_po_file :: proc(file_path: string) -> (result: []POEntry, err: string) {
 		}
 		defer delete(raw_line, context.allocator)
 
-		current_line += 1
+		p.curr_line_number += 1
 		line := strings.trim_right(raw_line, "\r\n")
 
 		BOM :: "\ufeff"
-		if current_line == 1 && strings.starts_with(line, BOM) {
+		if p.curr_line_number == 1 && strings.starts_with(line, BOM) {
 			line = line[len(BOM):]
 		}
 
 		ltype, lvalue := line_type(line)
-		// log.debug("parsed line: ", ltype, strings.trim(lvalue, "\""))
 
 		// we want to keep track of the real type of current "Value"
-		if p.curr_line != .Value {
-			p.prev_line = p.curr_line
+		if p.curr_line_type != .Value {
+			p.prev_line_type = p.curr_line_type
 		}
-		p.curr_line = ltype
+		p.curr_line_type = ltype
 
-		#partial switch p.curr_line {
+		#partial switch p.curr_line_type {
 		case .Undefined, .Blank:
 			// starting new entry
-			if p.prev_line == .MsgStr {
+			if p.prev_line_type == .MsgStr {
 				p.curr_entry.msgstr = strings.to_string(p.sb)
 			}
-			if p.curr_entry.msgid != "" && p.curr_entry.msgstr != "" {
-				append(&p.entries, p.curr_entry)
+
+			// if first one is metadata, parse accordingly
+			if len(&po_file.entries) == 0 && p.curr_entry.msgid == "" {
+				metadata_lines := strings.split(p.curr_entry.msgstr, "\\n")
+				defer delete(metadata_lines)
+
+				for mline in metadata_lines {
+					ml_kv := strings.split_n(mline, ": ", 2)
+					if len(ml_kv) > 1 {
+						po_file.metadata[ml_kv[0]] = ml_kv[1]
+					}
+				}
+			// else append to entries
+			} else {
+				append(&po_file.entries, p.curr_entry)
 			}
 			p.curr_entry = POEntry{}
 		case .MsgId:
@@ -143,14 +156,16 @@ parse_po_file :: proc(file_path: string) -> (result: []POEntry, err: string) {
 		}
 	}
 
-	log.debug("parsed entries", p.entries)
-
-	return list_to_return, ""
+	return .None
 }
 
 main :: proc() {
 	context.logger = log.create_console_logger()
-	parse_po_file("tests/short.po")
+
+	// on later stages we'll be able to also pass pofile as plain text
+	po_file := POFile{pofile= "tests/short.po"}
+	parse_po_file(&po_file)
+	log.debug(po_file)
 	// parse_po_file("tests/django.po")
 
 	log.destroy_console_logger(context.logger)
